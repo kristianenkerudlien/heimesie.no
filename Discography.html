@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding-top: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("Website background 2.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #d2d0d0;
+        }
+
+        a,
+        a:visited {
+            color: #ffffff;
+        }
+
+        .content {
+            box-sizing: border-box;
+            min-height: 100vh;
+            padding: 0 30px;
+        }
+
+        .album-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 500px));
+            gap: 16px;
+        }
+
+        .album-grid a {
+            display: block;
+        }
+
+        .album-grid img {
+            display: block;
+            width: 100%;
+            max-width: 500px;
+            height: auto;
+        }
+
+        .site-nav {
+            position: fixed;
+            left: 30px;
+            bottom: 20px;
+            margin: 0;
+        }
+
+        @media (max-width: 640px) {
+            .album-grid {
+                grid-template-columns: repeat(2, minmax(0, 210px));
+            }
+        }
+
+        @media (max-width: 420px) {
+            .album-grid {
+                grid-template-columns: minmax(0, 210px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="album-grid">
+            <a href="https://kristianenkerudlien.bandcamp.com/album/idiotek" target="_blank" rel="noopener noreferrer">
+            <img src="albumcover/IDIOTEK.jpg" alt="IDIOTEK album cover" width="200">
+            </a>
+            <a href="https://kristianenkerudlien.bandcamp.com/album/apt-opt-kroma" target="_blank" rel="noopener noreferrer">
+                <img src="albumcover/KRISE AOK.jpg" alt="KRISE - Apt Opt Kroma album cover" width="200">
+            </a>
+            <a href="https://nakamalabel.bandcamp.com/album/soon-means-now" target="_blank" rel="noopener noreferrer">
+                <img src="albumcover/Soon means now.jpg" alt="ükya - Soon Means Now album cover" width="200">
+            </a>
+            <a href="https://nakamalabel.bandcamp.com/album/we-come-for-an-experience-of-presence" target="_blank" rel="noopener noreferrer">
+                <img src="albumcover/wcfaeop.jpg" alt="ükya - We Come for an Experience of Presence album cover" width="200">
+            </a>
+            <a href="https://kristianenkerudlien.bandcamp.com/album/svartsymra" target="_blank" rel="noopener noreferrer">
+                <img src="albumcover/svartsymra.jpg" alt="Kristian Enkerud Lien - Svartsymra album cover" width="200">
+            </a>
+            <a href="https://valp.bandcamp.com/album/svulstige-kj-rlighetsbrev-til-surfekromatikken-vin-og-bach" target="_blank" rel="noopener noreferrer">
+                <img src="albumcover/Svulstige.jpg" alt="Kristian Enkerud Lien - Svulstige Kjærlighetsbrev til surfekromatikken vin og Bach album cover" width="200">
+            </a>
+            <a href="https://frodegjerstad.bandcamp.com/album/coming-from" target="_blank" rel="noopener noreferrer">
+                <img src="albumcover/Coming from.jpg" alt="Kristian Enkerud Lien - Svulstige Kjærlighetsbrev til surfekromatikken vin og Bach album cover" width="200">
+            </a>
+            <a href="https://peterwallemanundsen.bandcamp.com/album/where-is-direction" target="_blank" rel="noopener noreferrer">
+                <img src="albumcover/Where is Direction.jpg" alt="Peter Walleman Undsen - Where is Direction album cover" width="200">
+            </a>
+            <a href="https://pnlrecords.bandcamp.com/album/extra-large-unit-steam-waterfall" target="_blank" rel="noopener noreferrer">
+                <img src="albumcover/Extra Large Unit Steam Waterfall.jpg" alt="Extra Large Unit Steam Waterfall album cover" width="200">
+            </a>
+        </div>
+    </div>
+    <nav class="site-nav">
+        <a href="index.html">Front</a> |
+        <a href="About.html">About</a> |
+        <a href="Discography.html">Discography</a> |
+        <a href="Concerts.html">Concerts</a>
+    </nav>
+</body>
+</html>
