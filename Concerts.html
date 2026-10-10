@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("Website background 2.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #ca0000;
+        }
+
+        .content {
+            box-sizing: border-box;
+            padding: 0 clamp(16px, 4vw, 48px) 80px;
+            min-height: 100vh;
+        }
+
+        .content p {
+            max-width: 850px;
+            line-height: 1.6;
+        }
+
+        .site-nav {
+            position: fixed;
+            left: clamp(16px, 4vw, 48px);
+            right: 16px;
+            bottom: max(12px, env(safe-area-inset-bottom));
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+            z-index: 1;
+        }
+
+        .site-nav a {
+            display: inline-flex;
+            align-items: center;
+            min-height: 44px;
+        }
+
+        a,
+        a:visited {
+            color: #ca0000;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <p>17.10.2026 - Michael Foster with strings - Improverk Snails, Oslo</p>
+        <p>20.10.2026 - Ellerhusen Holm/Enkerud Lien - DUO Trondheim</p>
+        <p>19.11.2026 - OJKOS/DAK - Théâtre de Bourg-en-Bresse</p>
+        <p>26.11.2026 - ükya - Vekks, Vienna</p>
+        <p>27.11.2026 - ükya - Prague</p>
+    </div>
+    <nav class="site-nav">
+        <a href="index.html">Front</a>
+        <a href="About.html">About</a>
+        <a href="Discography.html">Discography</a>
+        <a href="Concerts.html">Concerts</a>
+    </nav>
+</body>
+</html>

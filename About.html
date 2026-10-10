@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Kristian Enkerud Lien</title>
+    <style>
+        body {
+            margin: 0;
+            padding-top: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("Website background 2.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            color: #ca0000;
+        }
+
+        .content {
+            box-sizing: border-box;
+            padding: 0 clamp(16px, 4vw, 48px) 80px;
+            min-height: 100vh;
+        }
+
+        .content img {
+            display: block;
+            width: min(600px, 100%);
+            height: auto;
+        }
+
+        .content p {
+            max-width: 850px;
+            line-height: 1.6;
+        }
+
+        .photo-credit {
+            font-size: 0.85em;
+        }
+
+        .site-nav {
+            position: fixed;
+            left: clamp(16px, 4vw, 48px);
+            right: 16px;
+            bottom: max(12px, env(safe-area-inset-bottom));
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px 16px;
+            z-index: 1;
+        }
+
+        .site-nav a {
+            display: inline-flex;
+            align-items: center;
+            min-height: 44px;
+        }
+
+        a,
+        a:visited {
+            color: #ca0000;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <img src="Kristian foto Amanda Iversen Orlich .JPG" alt="Kristian Enkerud Lien, photo by Amanda Iversen Orlich" width="600">
+        <p class="photo-credit">Foto: Amanda Overlich Iversen</p>
+        <p> Musician and composer Kristian Enkerud Lien from Otta, Norway (1996) is exploring creative music. This can be heard in the following bands: KRISE, Idiotek, ükya, Traum, vårknipa, Dahl/Nilssen-Love/Enkerud Lien, Ellerhusen Holm/Enkerud Lien and as a solo performer.</p>
+    </div>
+    <nav class="site-nav">
+        <a href="index.html">Front</a>
+        <a href="About.html">About</a>
+        <a href="Discography.html">Discography</a>
+        <a href="Concerts.html">Concerts</a>
+    </nav>
+</body>
+</html>
